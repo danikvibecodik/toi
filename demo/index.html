@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="kk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ерлан & Айдана — Үйлену тойы</title>
+<meta property="og:title" content="Ерлан & Айдана — Үйлену тойына шақыру">
+<meta property="og:description" content="15 мамыр 2027 · Талдықорған">
+<meta property="og:image" content="https://danikvibecodik.github.io/toi/demo/og.jpg">
+<meta property="og:url" content="https://danikvibecodik.github.io/toi/demo/">
+<style>
+/* fonts: script (Great Vibes), serif (Cormorant Garamond), sans (Montserrat) — Cyrillic + Kazakh letters */
+@font-face{font-family:"GVScript";src:url(../fonts/great-vibes-latin-400-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"GVScript";src:url(../fonts/great-vibes-cyrillic-400-normal.woff2) format("woff2");unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
+@font-face{font-family:"GVScript";src:url(../fonts/great-vibes-cyrillic-ext-400-normal.woff2) format("woff2");unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F}
+@font-face{font-family:"CGSerif";src:url(../fonts/cormorant-garamond-latin-500-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"CGSerif";src:url(../fonts/cormorant-garamond-cyrillic-500-normal.woff2) format("woff2");unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
+@font-face{font-family:"CGSerif";src:url(../fonts/cormorant-garamond-cyrillic-ext-500-normal.woff2) format("woff2");unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F}
+@font-face{font-family:"CGSerifI";src:url(../fonts/cormorant-garamond-latin-400-italic.woff2) format("woff2");unicode-range:U+0000-00FF,U+2000-206F}
+@font-face{font-family:"CGSerifI";src:url(../fonts/cormorant-garamond-cyrillic-400-italic.woff2) format("woff2");unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
+@font-face{font-family:"CGSerifI";src:url(../fonts/cormorant-garamond-cyrillic-ext-400-italic.woff2) format("woff2");unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F}
+@font-face{font-family:"MSans";src:url(../fonts/montserrat-latin-500-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+2000-206F,U+20AC,U+2122}
+@font-face{font-family:"MSans";src:url(../fonts/montserrat-cyrillic-500-normal.woff2) format("woff2");unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
+@font-face{font-family:"MSans";src:url(../fonts/montserrat-cyrillic-ext-500-normal.woff2) format("woff2");unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F}
+
+:root{--cream:#fbf7ef;--gold:#b8913e;--gold-l:#d9c08a;--teal:#1d5c66;--ink:#2b2a27;--muted:#7a7468}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:var(--cream);color:var(--ink)}
+body{font-family:"CGSerif",Georgia,serif;font-size:19px;line-height:1.45;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+.wrap{max-width:460px;margin:0 auto;padding:0 22px}
+.caps{font-family:"MSans",Arial,sans-serif;font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--teal)}
+.script{font-family:"GVScript",cursive;font-weight:400}
+.lang{position:fixed;top:12px;right:12px;z-index:20;display:flex;border:1px solid var(--gold-l);border-radius:20px;overflow:hidden;background:rgba(251,247,239,.92)}
+.lang button{font:500 11px "MSans",Arial,sans-serif;letter-spacing:.12em;padding:7px 11px;border:0;background:none;color:var(--muted);cursor:pointer}
+.lang button.on{background:var(--teal);color:#fff}
+.music{position:fixed;top:12px;left:12px;z-index:20;width:38px;height:38px;border-radius:50%;border:1px solid var(--gold-l);background:rgba(251,247,239,.92);display:flex;align-items:center;justify-content:center;cursor:pointer}
+.music svg{width:16px;height:16px}
+.music.on{animation:spin 4s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+/* hero */
+.hero{min-height:100svh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:70px 0 40px;position:relative}
+.orn{width:220px;height:auto;display:block;margin:0 auto}
+.orn.small{width:150px}
+.arch{width:230px;height:300px;margin:26px auto 22px;border-radius:115px 115px 14px 14px;padding:7px;border:1.5px solid var(--gold)}
+.arch div{width:100%;height:100%;border-radius:108px 108px 9px 9px;background:linear-gradient(160deg,#d8d2c4,#b9b1a1 55%,#a39a88);display:flex;align-items:flex-end;justify-content:center;padding-bottom:14px;color:#fff;font:500 10px "MSans",Arial,sans-serif;letter-spacing:.2em}
+.names{font-size:58px;line-height:1.05;color:var(--teal);margin-top:6px}
+.names span{display:block;font-size:30px;color:var(--gold);margin:2px 0}
+.date{font-family:"MSans",Arial,sans-serif;font-size:15px;letter-spacing:.32em;color:var(--ink);margin-top:18px}
+.scroll{margin-top:30px;color:var(--gold);font-size:22px;animation:bob 2s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(6px)}}
+/* sections */
+section.block{padding:46px 0;text-align:center}
+.title{font-family:"CGSerifI",Georgia,serif;font-style:italic;font-size:34px;color:var(--teal);margin:10px 0 16px;line-height:1.15}
+.lead{font-family:"CGSerifI",Georgia,serif;font-style:italic;font-size:21px;color:var(--ink)}
+.text{margin-top:14px}
+.hosts{margin-top:22px}
+.hosts .names2{font-family:"CGSerifI",Georgia,serif;font-style:italic;font-size:28px;color:var(--gold);margin-top:6px}
+.timer{display:flex;justify-content:center;gap:8px;margin-top:18px}
+.cell{width:74px;padding:12px 0 10px;border:1px solid var(--gold-l);border-radius:12px;background:#fffdf8}
+.num{font-family:"CGSerif",Georgia,serif;font-size:34px;line-height:1;color:var(--teal)}
+.lab{font-family:"MSans",Arial,sans-serif;font-size:9px;letter-spacing:.2em;color:var(--muted);margin-top:6px;text-transform:uppercase}
+.card{border:1px solid var(--gold-l);border-radius:16px;background:#fffdf8;padding:22px 18px;margin-top:16px}
+.card .big{font-size:26px;color:var(--teal);margin:6px 0}
+.btn{display:inline-block;margin-top:14px;font:500 12px "MSans",Arial,sans-serif;letter-spacing:.18em;text-transform:uppercase;color:#fff;background:var(--teal);border:0;border-radius:24px;padding:13px 22px;text-decoration:none;cursor:pointer}
+.btn.ghost{background:none;color:var(--teal);border:1px solid var(--teal)}
+.prog{list-style:none;margin-top:10px;text-align:left}
+.prog li{display:flex;gap:16px;padding:12px 4px;border-bottom:1px dashed var(--gold-l)}
+.prog b{font-family:"MSans",Arial,sans-serif;font-weight:500;font-size:14px;color:var(--gold);min-width:52px;padding-top:3px}
+input.name{width:100%;margin-top:16px;padding:13px 14px;border:1px solid var(--gold-l);border-radius:12px;background:#fff;font:18px "CGSerif",Georgia,serif;color:var(--ink)}
+.rsvp-btns{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+footer{padding:40px 0 60px;text-align:center}
+footer .script{font-family:"CGSerifI",Georgia,serif;font-style:italic;font-size:36px;color:var(--teal)}
+.demo-bar{position:fixed;left:0;right:0;bottom:0;z-index:30;display:flex;align-items:center;justify-content:center;gap:12px;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:rgba(29,92,102,.97);color:#fbf7ef;font:500 13px "MSans",Arial,sans-serif}
+.demo-bar a{color:#1d5c66;background:#fbf7ef;border-radius:18px;padding:8px 14px;text-decoration:none;letter-spacing:.06em;white-space:nowrap}
+body.demo{padding-bottom:64px}
+.demo-note{display:none;margin-top:16px;border:1px dashed var(--gold);border-radius:12px;padding:12px 14px;background:#fffdf8;font-size:17px}
+.demo-note.show{display:block}
+.demo-note .q{display:block;margin-top:6px;font-family:"CGSerifI",Georgia,serif;font-style:italic;color:var(--teal)}
+.fade{opacity:0;transform:translateY(18px);transition:opacity .9s,transform .9s}
+.fade.in{opacity:1;transform:none}
+</style>
+</head>
+<body>
+<div class="lang"><button data-l="kk" class="on">ҚАЗ</button><button data-l="ru">РУС</button></div>
+<button class="music" id="music" aria-label="music"><svg viewBox="0 0 24 24" fill="none" stroke="#1d5c66" stroke-width="2"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg></button>
+
+<!-- original ornament (stylised ram's-horn motif), reused as dividers -->
+<svg width="0" height="0" style="position:absolute">
+  <defs>
+    <g id="horn">
+      <path d="M100 30 C100 12 84 4 72 10 C60 16 62 32 74 32 C84 32 84 20 76 20" fill="none" stroke="#b8913e" stroke-width="2.4" stroke-linecap="round"/>
+      <path d="M100 30 C100 12 116 4 128 10 C140 16 138 32 126 32 C116 32 116 20 124 20" fill="none" stroke="#b8913e" stroke-width="2.4" stroke-linecap="round"/>
+      <path d="M100 30 L100 44 M92 44 L108 44" stroke="#b8913e" stroke-width="2.4" stroke-linecap="round"/>
+      <path d="M62 26 C46 26 34 18 20 26 M138 26 C154 26 166 18 180 26" fill="none" stroke="#d9c08a" stroke-width="1.6" stroke-linecap="round"/>
+      <circle cx="12" cy="27" r="3" fill="#d9c08a"/><circle cx="188" cy="27" r="3" fill="#d9c08a"/>
+    </g>
+  </defs>
+</svg>
+
+<header class="hero">
+  <svg class="orn" viewBox="0 0 200 50"><use href="#horn"/></svg>
+  <div class="caps" data-kk="Үйлену тойы" data-ru="Свадьба">Үйлену тойы</div>
+  <div class="arch"><div data-kk="СІЗДІҢ ФОТО" data-ru="ВАШЕ ФОТО">СІЗДІҢ ФОТО</div></div>
+  <div class="names script">Ерлан<span>&amp;</span>Айдана</div>
+  <div class="date">15 · 05 · 2027</div>
+  <div class="scroll">⌄</div>
+</header>
+
+<main class="wrap">
+  <section class="block fade">
+    <svg class="orn small" viewBox="0 0 200 50"><use href="#horn"/></svg>
+    <p class="lead" data-kk="Құрметті ағайын-туыс, құда-жекжат, дос-жарандар!" data-ru="Дорогие родные, сваты и друзья!">Құрметті ағайын-туыс, құда-жекжат, дос-жарандар!</p>
+    <p class="text" data-kk="Сіздерді ұлымыз Ерлан мен келініміз Айдананың үйлену тойына арналған салтанатты ақ дастарханымыздың қадірлі қонағы болуға шақырамыз!" data-ru="Приглашаем вас стать почётными гостями торжественного дастархана в честь свадьбы нашего сына Ерлана и невестки Айданы!">Сіздерді ұлымыз Ерлан мен келініміз Айдананың үйлену тойына арналған салтанатты ақ дастарханымыздың қадірлі қонағы болуға шақырамыз!</p>
+    <div class="hosts">
+      <div class="caps" data-kk="Той иелері" data-ru="Хозяева торжества">Той иелері</div>
+      <div class="names2">Бекболат — Гүлнар</div>
+    </div>
+  </section>
+
+  <section class="block fade">
+    <div class="caps" data-kk="Тойға дейін қалды" data-ru="До торжества осталось">Тойға дейін қалды</div>
+    <div class="timer">
+      <div class="cell"><div class="num" id="d">0</div><div class="lab" data-kk="күн" data-ru="дней">күн</div></div>
+      <div class="cell"><div class="num" id="h">0</div><div class="lab" data-kk="сағат" data-ru="часов">сағат</div></div>
+      <div class="cell"><div class="num" id="m">0</div><div class="lab" data-kk="минут" data-ru="минут">минут</div></div>
+      <div class="cell"><div class="num" id="s">0</div><div class="lab" data-kk="секунд" data-ru="секунд">секунд</div></div>
+    </div>
+  </section>
+
+  <section class="block fade">
+    <div class="title" data-kk="Той салтанаты" data-ru="Торжество">Той салтанаты</div>
+    <div class="card">
+      <div class="caps" data-kk="Күні мен уақыты" data-ru="Дата и время">Күні мен уақыты</div>
+      <div class="big" data-kk="15 мамыр 2027, сағат 18:00" data-ru="15 мая 2027, в 18:00">15 мамыр 2027, сағат 18:00</div>
+      <div class="caps" style="margin-top:14px" data-kk="Мекенжайы" data-ru="Адрес">Мекенжайы</div>
+      <div class="big" data-kk="«Жұлдыз» мейрамханасы" data-ru="Ресторан «Жулдыз»">«Жұлдыз» мейрамханасы</div>
+      <div data-kk="Талдықорған қаласы" data-ru="г. Талдыкорган">Талдықорған қаласы</div>
+      <a class="btn" id="mapBtn" href="#" target="_blank" rel="noopener" data-kk="Картадан ашу" data-ru="Открыть на карте">Картадан ашу</a>
+    </div>
+    <ul class="prog">
+      <li><b>17:30</b><span data-kk="Қонақтарды қарсы алу" data-ru="Встреча гостей">Қонақтарды қарсы алу</span></li>
+      <li><b>18:00</b><span data-kk="Беташар" data-ru="Беташар">Беташар</span></li>
+      <li><b>19:00</b><span data-kk="Салтанатты ақ дастархан" data-ru="Праздничный дастархан">Салтанатты ақ дастархан</span></li>
+      <li><b>23:00</b><span data-kk="Той соңы" data-ru="Завершение вечера">Той соңы</span></li>
+    </ul>
+  </section>
+
+  <section class="block fade">
+    <div class="title" data-kk="Келетініңізді растаңыз" data-ru="Подтвердите участие">Келетініңізді растаңыз</div>
+    <p data-kk="Өтініш, 1 мамырға дейін жауап беріңіз" data-ru="Пожалуйста, ответьте до 1 мая">Өтініш, 1 мамырға дейін жауап беріңіз</p>
+    <input class="name" id="guest" data-ph-kk="Аты-жөніңіз" data-ph-ru="Ваше имя" placeholder="Аты-жөніңіз">
+    <div class="rsvp-btns">
+      <button class="btn" data-ans="yes" data-kk="Келемін" data-ru="Приду">Келемін</button>
+      <button class="btn ghost" data-ans="no" data-kk="Келе алмаймын" data-ru="Не смогу">Келе алмаймын</button>
+    </div>
+    <div class="demo-note" id="demoNote"><span data-kk="Нағыз шақыруда қонақтың жауабы сіздің WhatsApp-қа келеді:" data-ru="В настоящем приглашении ответ гостя придёт вам в WhatsApp:">Нағыз шақыруда қонақтың жауабы сіздің WhatsApp-қа келеді:</span><span class="q" id="demoMsg"></span></div>
+  </section>
+</main>
+<footer class="fade">
+  <svg class="orn small" viewBox="0 0 200 50"><use href="#horn"/></svg>
+  <div class="script" data-kk="Сіздерді күтеміз!" data-ru="Ждём вас!">Сіздерді күтеміз!</div>
+</footer>
+<div class="demo-bar" id="demoBar"><span data-kk="Бұл — шақыру үлгісі" data-ru="Это образец приглашения">Бұл — шақыру үлгісі</span><a href="../" data-kk="Маған да осындай" data-ru="Хочу такое же">Маған да осындай</a></div>
+<audio id="song" src="song.mp3" preload="none" loop></audio>
+<script>
+/* ===== Settings: edit these lines for each order ===== */
+const CONFIG = {
+  targetUTC: Date.UTC(2027, 4, 15, 13, 0, 0),   // 15 May 2027 18:00 in Kazakhstan (UTC+5)
+  whatsapp: "77000000000",                        // host's WhatsApp number for RSVP
+  mapUrl: "https://2gis.kz/taldykorgan",          // 2GIS / Google Maps link to the venue
+  demo: true                                      // sample page: RSVP shows a preview instead of opening WhatsApp
+};
+/* ====================================================== */
+let lang = "kk";
+function setLang(l){
+  lang = l;
+  document.documentElement.lang = l;
+  document.querySelectorAll("[data-kk]").forEach(el => { el.textContent = el.dataset[l]; });
+  document.querySelectorAll("[data-ph-kk]").forEach(el => { el.placeholder = l === "kk" ? el.dataset.phKk : el.dataset.phRu; });
+  document.querySelectorAll(".lang button").forEach(b => b.classList.toggle("on", b.dataset.l === l));
+}
+document.querySelectorAll(".lang button").forEach(b => b.addEventListener("click", () => setLang(b.dataset.l)));
+document.getElementById("mapBtn").href = CONFIG.mapUrl;
+document.querySelectorAll("[data-ans]").forEach(b => b.addEventListener("click", () => {
+  const name = document.getElementById("guest").value.trim() || (lang === "kk" ? "Қонақ" : "Гость");
+  const yes = b.dataset.ans === "yes";
+  const msg = lang === "kk"
+    ? `${name}: ${yes ? "тойға келемін!" : "өкінішке орай, келе алмаймын."}`
+    : `${name}: ${yes ? "приду на торжество!" : "к сожалению, не смогу прийти."}`;
+  if (CONFIG.demo) {
+    document.getElementById("demoMsg").textContent = "«" + msg + "»";
+    document.getElementById("demoNote").classList.add("show");
+    return;
+  }
+  window.open(`https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(msg)}`, "_blank");
+}));
+if (CONFIG.demo) document.body.classList.add("demo"); else document.getElementById("demoBar").remove();
+const song = document.getElementById("song"), mus = document.getElementById("music");
+mus.addEventListener("click", () => { if (song.paused) { song.play().catch(()=>{}); mus.classList.add("on"); } else { song.pause(); mus.classList.remove("on"); } });
+function tick(){
+  let ms = Math.max(0, CONFIG.targetUTC - Date.now());
+  const d = Math.floor(ms/864e5); ms -= d*864e5;
+  const h = Math.floor(ms/36e5); ms -= h*36e5;
+  const m = Math.floor(ms/6e4); ms -= m*6e4;
+  document.getElementById("d").textContent = d;
+  document.getElementById("h").textContent = h;
+  document.getElementById("m").textContent = m;
+  document.getElementById("s").textContent = Math.floor(ms/1e3);
+}
+tick(); setInterval(tick, 1000);
+const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) e.target.classList.add("in"); }), {threshold:.15});
+document.querySelectorAll(".fade").forEach(el => io.observe(el));
+</script>
+</body>
+</html>
